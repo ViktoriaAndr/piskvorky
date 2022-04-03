@@ -8,28 +8,28 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
 }
 
 .obsah {
   background-color: #283e50;
   max-width: 370px;
   margin: 0 auto;
+  border-radius: 7px 7px 0 0;
 }
 
 .foto {
-  max-width: 370px;
-  border-radius: 5px 5px 0 0;
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
   font-size: 36px;
-  text-align: center;
-  color: #ffffff;
   font-family: 'Lobster';
 }
 
-p {
-  color: #ffffff;
+.rules__text {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
@@ -43,8 +43,6 @@ p {
 .tlacidla a {
   display: block;
   font-size: 18px;
-  font-weight: 500;
-  text-align: center;
   text-decoration: none;
   color: #ffffff;
   padding: 20px 30px;
@@ -57,11 +55,12 @@ p {
 
 .pravidla {
   background-color: #1fcca4;
+  max-width: 100%;
 }
 
 .hrat {
   background-color: #0197f6;
-  width: 370px;
+  max-width: 100%;
 }
 
 .pravidla a:hover,
@@ -74,4 +73,61 @@ p {
 .hrat a:focus {
   background-color: #0090e9;
   color: #ffffff;
+}
+
+/* Ukol II */
+
+img {
+  max-width: 100%;
+}
+
+.icon {
+  width: 1em;
+  filter: invert(100%);
+}
+
+figcaption {
+  max-width: 100%;
+  font-style: italic;
+  line-height: normal;
+  margin: 4px 20px 40px 20px;
+}
+
+.bullets {
+  text-align: left;
+  padding-left: 0.938rem;
+}
+
+.caption__rules {
+  padding-top: 0.625rem;
+}
+
+.rules__title {
+  padding-top: 1.25rem;
+}
+
+.figure {
+  max-width: 100%;
+  padding: 4px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .rules__tictactoe {
+    max-width: 500px;
+  }
+
+  .image__explanations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .image__explanations figure {
+    max-width: 40%;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
 }
