@@ -16,6 +16,8 @@ body {
   background-color: #283e50;
   max-width: 370px;
   margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .intro__image {
@@ -26,6 +28,7 @@ body {
 h1 {
   font-family: 'Lobster';
   margin: 0%;
+  padding-top: 1.25rem;
 }
 
 .rules__text {
@@ -100,9 +103,6 @@ figcaption {
 }
 
 .rules__title {
-  max-width: 100%;
-  font-style: italic;
-  line-height: normal;
   padding-top: 1.25rem;
 }
 
@@ -133,10 +133,10 @@ figure {
   h1 {
     font-size: 35px;
   }
-}
 
-figure {
-  margin: 5px 25px;
+  .buttons__game a {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -155,5 +155,14 @@ figure {
   .rules__text {
     margin-left: 20px;
     margin-right: 10px;
+  }
+
+  figcaption,
+  .rules__text {
+    font-size: 24px;
+  }
+
+  .buttons__game a {
+    font-size: 24px;
   }
 }
