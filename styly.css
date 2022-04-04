@@ -12,65 +12,64 @@ body {
   text-align: center;
 }
 
-.obsah {
+.content {
   background-color: #283e50;
   max-width: 370px;
   margin: 0 auto;
+}
+
+.intro__image {
+  background-position: center;
   border-radius: 7px 7px 0 0;
 }
 
-.foto {
-  background-size: cover;
-  background-position: center;
-}
-
 h1 {
-  font-size: 36px;
   font-family: 'Lobster';
+  margin: 0%;
 }
 
 .rules__text {
-  font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding-right: 20px;
 }
 
-.tlacidla li {
+.buttons__game li {
   display: block;
 }
 
-.tlacidla a {
+.buttons__game a {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   color: #ffffff;
   padding: 20px 30px;
 }
 
-.tlacidla {
+.buttons__game {
   margin: 0;
   padding: 0;
 }
 
-.pravidla {
+.btn--rules {
   background-color: #1fcca4;
   max-width: 100%;
 }
 
-.hrat {
+.btn--play {
   background-color: #0197f6;
   max-width: 100%;
 }
 
-.pravidla a:hover,
-.pravidla a:focus {
+.btn--rules a:hover,
+.btn--rules a:focus {
   background-color: #1cbb96;
   color: #ffffff;
 }
 
-.hrat a:hover,
-.hrat a:focus {
+.btn--play a:hover,
+.btn--play a:focus {
   background-color: #0090e9;
   color: #ffffff;
 }
@@ -90,7 +89,8 @@ figcaption {
   max-width: 100%;
   font-style: italic;
   line-height: normal;
-  margin: 4px 20px 40px 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .bullets {
@@ -98,23 +98,20 @@ figcaption {
   padding-left: 0.938rem;
 }
 
-.caption__rules {
-  padding-top: 0.625rem;
-}
-
 .rules__title {
+  max-width: 100%;
+  font-style: italic;
+  line-height: normal;
   padding-top: 1.25rem;
 }
 
-.figure {
-  max-width: 100%;
-  padding: 4px;
-  margin: auto;
+figure {
+  margin: 5px 25px;
 }
 
 @media (min-width: 768px) {
   .rules__tictactoe {
-    max-width: 500px;
+    max-width: 600px;
   }
 
   .image__explanations {
@@ -127,7 +124,35 @@ figcaption {
     max-width: 40%;
   }
 
-  figcaption {
-    font-size: 20px;
+  figcaption,
+  .rules__text {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+}
+
+figure {
+  margin: 5px 25px;
+}
+
+@media (min-width: 1000px) {
+  .rules__tictactoe {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  figure {
+    margin: 10px 45px;
+  }
+
+  .rules__text {
+    margin-left: 20px;
+    margin-right: 10px;
   }
 }
