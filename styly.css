@@ -66,13 +66,17 @@ h1 {
 }
 
 .btn--rules a:hover,
-.btn--rules a:focus {
+.btn--rules a:focus,
+.game-menu__home--button:hover,
+.game-menu__home--button:focus {
   background-color: #1cbb96;
   color: #ffffff;
 }
 
 .btn--play a:hover,
-.btn--play a:focus {
+.btn--play a:focus,
+.game-menu__restart--button:hover,
+.game-menu__restart--buttona:focus {
   background-color: #0090e9;
   color: #ffffff;
 }
@@ -165,4 +169,67 @@ figure {
   .buttons__game a {
     font-size: 24px;
   }
+}
+
+/* III. časť */
+
+.gra {
+  max-width: 80vw;
+  margin: 0 auto;
+  max-height: 60%;
+  width: 470px;
+}
+
+.game-menu__icon span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.game-menu__buttons {
+  display: block;
+}
+
+.game-menu__home--button {
+  background-color: #1fcca4;
+  border-radius: 0.3em;
+  padding: 7px;
+  margin-right: 5px;
+}
+
+.game-menu__restart--button {
+  background-color: #0197f6;
+  border-radius: 0.3em;
+  padding: 7px;
+}
+
+.game-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.game__field {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black;
+}
+
+button {
+  background-color: rgba(240, 237, 237, 0.75);
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.5;
+  border: solid black;
+}
+
+button:hover,
+:focus {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.icon {
+  position: relative;
+  top: 1.5px;
 }
