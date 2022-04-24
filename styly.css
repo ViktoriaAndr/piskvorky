@@ -87,7 +87,8 @@ img {
   max-width: 100%;
 }
 
-.icon {
+.icon,
+.icon__circle {
   width: 1em;
   filter: invert(100%);
 }
@@ -222,6 +223,7 @@ button {
   aspect-ratio: 1 / 1;
   opacity: 0.5;
   border: solid 1px black;
+  background-size: 4px;
 }
 
 button:hover,
@@ -233,4 +235,22 @@ button:hover,
 .icon {
   position: relative;
   top: 1.5px;
+}
+
+/* IV. časť */
+
+.board__field--circle {
+  background-image: URL(circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  transition: background-size 0.15s;
+}
+
+.board__field--cross {
+  background-image: URL(cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  transition: background-size 0.15s;
 }
