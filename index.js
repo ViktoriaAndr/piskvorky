@@ -1,16 +1,18 @@
 console.log('funguju');
 
-const myTurn = document.querySelectorAll('button');
 let playerTurn = 'circle';
+
+const myTurn = document.querySelectorAll('button');
 
 for (let i = 0; i < myTurn.length; i++) {
   myTurn[i].addEventListener('click', (event) => {
+    event.preventDefault();
     if (playerTurn === 'circle') {
       event.target.classList.add('board__field--circle');
       playerTurn = 'cross';
       const whoseTurn = document.querySelector('.icon__circle');
       whoseTurn.src = 'cross.svg';
-      whoseTurn.alt = 'křížik je na taku';
+      whoseTurn.alt = 'křížik je na tahu';
     } else {
       event.target.classList.add('board__field--cross');
       playerTurn = 'circle';
@@ -20,19 +22,14 @@ for (let i = 0; i < myTurn.length; i++) {
     }
     myTurn[i].disabled = true;
     if (isWinningMove(myTurn[i]) === true) {
-      let player = getSymbol(myTurn[i]);
-
-      if (player === 'cross') {
-        const win1 = () => {
-          alert('Vyhrál křížek');
+      if (playerTurn === 'circle' || 'cross') {
+        let winnerConfirm = () => {
+          confirm('Máš to v kapse! Chceš si zahrát znovu?');
+          location.reload();
         };
-        setTimeout(win1, 300);
+        setTimeout(winnerConfirm, 300);
         return;
       }
-      const win2 = () => {
-        alert('Vyhrál kroužek');
-      };
-      setTimeout(win2, 300);
     }
   });
 }
